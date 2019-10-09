@@ -11,12 +11,13 @@ beforeEach(()=>{
     wrapped = mount(
         <Root initialState={initialState}>
           <CommentList />
+        
         </Root>
       );
 })
 
 it('creates one LI per comment',()=>{
-    expect(wrapped.find('li').length).toEqual(2)
+    expect(wrapped.find('li').length).toEqual(2 )
 })
 
 it('shows text for each comment',()=>{
